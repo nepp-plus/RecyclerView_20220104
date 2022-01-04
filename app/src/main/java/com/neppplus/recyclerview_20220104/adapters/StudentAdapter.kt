@@ -53,6 +53,10 @@ class StudentAdapter(
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
+//        원래는 여기서 실 데이터 반영. => MyViewHolder에 bind 함수로 대체.
+
+        holder.bind( mList[position] )
+
     }
 
     override fun getItemCount(): Int {
