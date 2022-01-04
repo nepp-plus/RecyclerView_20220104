@@ -35,7 +35,7 @@ class StudentAdapter(
             txtName.text = data.name
             txtAddress.text = data.address
 
-            txtAge.text = "(${data.birthYear}세)"
+            txtAge.text = "(${data.getAge()}세)"
 
         }
 
